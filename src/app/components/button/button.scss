@@ -1,0 +1,131 @@
+.btn {
+  appearance: none;
+  display: block;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  padding: 0 1rem;
+  line-height: calc(3rem - 4px);
+  height: 3rem;
+  min-width: 150px;
+  max-width: 100%;
+  text-transform: uppercase;
+  font-family: $font;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: all ease .4s;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  span {
+    pointer-events: none;
+  }
+
+  &--big {
+    line-height: calc(4rem - 4px);
+    height: 4rem;
+    padding: 0 1.5rem;
+    font-size: 1.65rem;
+    border-radius: 6px;
+  }
+
+  &--expand-mobile {
+    width: 100%;
+
+    @include breakpoint-tablet {
+      width: initial;
+    }
+  }
+
+  &--orange {
+    background: $color-orange;
+    color: $color-pearl;
+
+    &:hover {
+      background: lighten($color-orange, 10%);
+    }
+  }
+
+  &--emerald {
+    background: $color-emerald;
+    color: $color-pearl;
+
+    &:hover {
+      background: darken($color-emerald, 10%);
+    }
+  }
+
+  &--yellow {
+    background: $color-yellow;
+    color: $color-pearl;
+
+    &:hover {
+      background: darken($color-yellow, 10%);
+    }
+  }
+
+  &--pearl {
+    background: $color-pearl;
+    color:$color-swamp;
+
+    &:hover {
+      background: lighten($color-pearl, 10%);
+    }
+  }
+
+  &--swamp {
+    background: $color-swamp;
+    color:$color-pearl;
+
+    &:hover {
+      background: lighten($color-swamp, 10%);
+    }
+  }
+
+  &--red {
+    background: $color-red;
+    color:$color-pearl;
+
+    &:hover {
+      background: lighten($color-red, 10%);
+    }
+  }
+
+  &--green {
+    background: $color-green;
+    color:$color-pearl;
+
+    &:hover {
+      background: lighten($color-green, 10%);
+    }
+  }
+
+  &--glow {
+    background: $color-glow;
+    color:$color-pearl;
+
+    &:hover {
+      background: lighten($color-glow, 10%);
+    }
+  }
+
+  &--gold {
+    background: $color-gold;
+    color:$color-pearl;
+
+    &:hover {
+      background: lighten($color-gold, 10%);
+    }
+  }
+
+  &--theme {
+    background: $color-theme;
+    color:$color-emerald;
+
+    &:hover {
+      background: lighten($color-theme, 10%);
+    }
+  }
+}

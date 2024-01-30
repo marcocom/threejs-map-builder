@@ -1,0 +1,109 @@
+.form {
+  ::-webkit-input-placeholder {
+    color: $color-pearl;
+  }
+  ::-moz-placeholder {
+    color: $color-pearl;
+  }
+  :-ms-input-placeholder {
+    color: $color-pearl;
+  }
+  :-moz-placeholder {
+    color: $color-pearl;
+  }
+
+  &__group {
+
+  }
+
+  &__label {
+    width: 100%;
+    display: block;
+    color: $color-pearl;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+
+  &__element {
+    appearance: none;
+    display: block;
+    width: 100%;
+    padding: 0 1rem;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    margin: 0;
+    height: 2.75rem;
+    line-height: calc(2.75rem - 2px);
+    border: 1px solid $color-pearl;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: $color-pearl;
+    font-family: $font;
+    border-radius: 2px;
+
+    &--rounded {
+      border-radius: 4px;
+    }
+  }
+
+  textarea.form__element {
+    width: 100%;
+    height: auto;
+    resize: none;
+    padding: 0.5rem 1rem;
+    line-height: calc(1.75rem - 2px);
+  }
+
+  select.form__element option {
+    font-size: 1.1rem;
+    background: #f1f1f1;
+  }
+
+  input[type=radio].form__element {
+    display: none;
+
+    & + label {
+      display: block;
+      width: 100%;
+      border: 1px solid $color-pearl;
+      border-radius: 4px;
+      padding: 0 1rem;
+      height: 2.75rem;
+      line-height: calc(2.75rem - 2px);
+      text-transform: uppercase;
+      font-family: $font;
+      font-size: 1.2rem;
+      font-weight: 400;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: $color-pearl;
+      box-shadow: none;
+      cursor: pointer;
+      transition: all ease .2s;
+    }
+
+    &--rounded + label {
+      border-radius: 4px;
+    }
+
+    &:disabled + label {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    &:checked + label {
+      background: $color-pearl;
+      color: $color-swamp;
+    }
+
+    &:not(:checked) + label:hover {
+      background: rgba($color-pearl, 0.25);
+      border-color: transparent;
+      transition: background ease .4s, border-color ease .2s;
+    }
+  }
+}
