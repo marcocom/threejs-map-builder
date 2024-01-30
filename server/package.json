@@ -1,0 +1,16 @@
+{
+  "name": "MappBuilder Server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "git@github.com:Mappalabs/mapp-builder.git",
+  "author": "MappaLabs",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0",
+    "uniqid": "^5.0.3",
+    "unique-names-generator": "^2.0.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
